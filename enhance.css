@@ -1,0 +1,87 @@
+/* United AI enhancement layer (LIGHT / white theme, matches original sub2api) — scoped to /model-plaza & /affiliate */
+:root{--ua-p:#14b8a6;--ua-p2:#0d9488;--ua-ink:#111827;--ua-sub:#6b7280;--ua-line:#e5e7eb;--ua-soft:#f9fafb;}
+
+/* Clickable plaza title -> home */
+.ua-home-link{cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:10px}
+.ua-home-link:hover{opacity:.85}
+.ua-home-link .ua-back{font-size:13px;color:var(--ua-sub);border:1px solid var(--ua-line);border-radius:999px;padding:3px 12px;background:#fff;font-weight:500}
+.dark .ua-home-link .ua-back{background:transparent;border-color:rgba(255,255,255,.15);color:#9aa6c7}
+
+/* Injected pricing panel — light */
+#ua-pricing{color:var(--ua-ink);
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",Roboto,"Noto Sans CJK SC",system-ui,-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;letter-spacing:.01em;margin-top:8px}
+.dark #ua-pricing{color:#e5e7eb}
+#ua-pricing .ua-h{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:6px 0 20px}
+#ua-pricing .ua-h h2{font-size:clamp(22px,2.8vw,30px);font-weight:800;line-height:1.2}
+#ua-pricing .ua-h h2 .g{color:var(--ua-p2)}
+.dark #ua-pricing .ua-h h2 .g{color:#2dd4bf}
+#ua-pricing .ua-h p{color:var(--ua-sub);font-size:14px;margin-top:6px}
+.dark #ua-pricing .ua-h p{color:#9aa6c7}
+#ua-pricing .ua-upd{font-size:12.5px;color:var(--ua-sub);border:1px solid var(--ua-line);border-radius:999px;padding:6px 14px;background:#fff}
+.dark #ua-pricing .ua-upd{background:transparent;border-color:rgba(255,255,255,.12);color:#9aa6c7}
+
+#ua-pricing .ua-grp{border:1px solid var(--ua-line);border-radius:16px;background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);margin-bottom:20px;overflow:hidden}
+.dark #ua-pricing .ua-grp{background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.10)}
+#ua-pricing .ua-grp-h{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--ua-line);background:var(--ua-soft)}
+.dark #ua-pricing .ua-grp-h{background:rgba(255,255,255,.02);border-color:rgba(255,255,255,.08)}
+#ua-pricing .ua-grp-h .ic{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,var(--ua-p),var(--ua-p2));box-shadow:0 4px 12px rgba(20,184,166,.3)}
+#ua-pricing .ua-grp-h b{font-size:17px;font-weight:700}
+#ua-pricing .ua-grp-h span{font-size:13px;color:var(--ua-sub);margin-left:auto}
+#ua-pricing .ua-table{width:100%;border-collapse:collapse;font-size:14px}
+#ua-pricing .ua-table thead th{text-align:left;padding:11px 20px;color:var(--ua-sub);font-weight:600;font-size:12px;
+  text-transform:uppercase;letter-spacing:.04em;background:var(--ua-soft)}
+.dark #ua-pricing .ua-table thead th{background:rgba(255,255,255,.02);color:#9aa6c7}
+#ua-pricing .ua-table thead th.num,#ua-pricing .ua-table tbody td.num{text-align:right;font-variant-numeric:tabular-nums}
+#ua-pricing .ua-table tbody td{padding:12px 20px;border-top:1px solid var(--ua-line)}
+.dark #ua-pricing .ua-table tbody td{border-color:rgba(255,255,255,.06)}
+#ua-pricing .ua-table tbody tr:hover{background:var(--ua-soft)}
+.dark #ua-pricing .ua-table tbody tr:hover{background:rgba(255,255,255,.03)}
+#ua-pricing .ua-mname{font-weight:700}
+#ua-pricing .ua-mid{display:block;font-size:12px;color:var(--ua-sub);font-weight:400;margin-top:2px;font-family:ui-monospace,Menlo,Consolas,monospace}
+#ua-pricing .ua-price{font-weight:700;color:var(--ua-p2)}
+.dark #ua-pricing .ua-price{color:#2dd4bf}
+
+#ua-pricing .ua-pk-title{font-size:clamp(20px,2.4vw,26px);font-weight:800;margin:30px 0 6px}
+#ua-pricing .ua-pk-sub{color:var(--ua-sub);font-size:14px;margin-bottom:18px}
+#ua-pricing .ua-pk{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+#ua-pricing .ua-pk-card{border:1px solid var(--ua-line);border-radius:16px;padding:22px 18px;background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);position:relative;transition:.25s;text-align:center}
+.dark #ua-pricing .ua-pk-card{background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.10)}
+#ua-pricing .ua-pk-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.08);border-color:rgba(20,184,166,.5)}
+#ua-pricing .ua-pk-card.hot{border-color:var(--ua-p);box-shadow:0 10px 28px rgba(20,184,166,.14)}
+#ua-pricing .ua-pk-card .tag{position:absolute;top:12px;right:12px;font-size:11px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--ua-p),var(--ua-p2));border-radius:999px;padding:3px 10px}
+#ua-pricing .ua-pk-card .amt{font-size:32px;font-weight:900;color:var(--ua-ink)}
+.dark #ua-pricing .ua-pk-card .amt{color:#fff}
+#ua-pricing .ua-pk-card .amt small{font-size:15px;color:var(--ua-sub)}
+#ua-pricing .ua-pk-card .give{color:var(--ua-p2);font-size:13.5px;margin-top:6px;font-weight:700}
+#ua-pricing .ua-pk-card .desc{color:var(--ua-sub);font-size:13px;margin-top:10px}
+#ua-pricing .ua-note{color:var(--ua-sub);font-size:12.5px;margin-top:16px;text-align:center}
+
+/* Affiliate light intro banner */
+#ua-aff{margin-bottom:20px;color:var(--ua-ink);
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",Roboto,system-ui,sans-serif}
+.dark #ua-aff{color:#e5e7eb}
+#ua-aff .ua-hero{border:1px solid var(--ua-line);border-radius:18px;padding:28px 24px;
+  background:linear-gradient(135deg,#f0fdfa,#ffffff);box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.dark #ua-aff .ua-hero{background:linear-gradient(135deg,rgba(20,184,166,.10),rgba(255,255,255,.02));border-color:rgba(255,255,255,.10)}
+#ua-aff .ua-hero h2{font-size:clamp(22px,2.8vw,30px);font-weight:800}
+#ua-aff .ua-hero h2 .g{color:var(--ua-p2)}
+.dark #ua-aff .ua-hero h2 .g{color:#2dd4bf}
+#ua-aff .ua-hero p{color:var(--ua-sub);margin-top:8px;font-size:14px;max-width:640px}
+#ua-aff .ua-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+#ua-aff .ua-step{border:1px solid var(--ua-line);border-radius:12px;padding:16px;background:#fff}
+.dark #ua-aff .ua-step{background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.10)}
+#ua-aff .ua-step b{display:flex;align-items:center;gap:8px;font-size:15px}
+#ua-aff .ua-step b i{width:24px;height:24px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;
+  font-style:normal;color:#fff;background:linear-gradient(135deg,var(--ua-p),var(--ua-p2))}
+#ua-aff .ua-step p{color:var(--ua-sub);font-size:13px;margin-top:8px}
+
+@media(max-width:820px){
+  #ua-pricing .ua-pk{grid-template-columns:repeat(2,1fr)}
+  #ua-aff .ua-steps{grid-template-columns:1fr}
+  #ua-pricing .ua-table thead th.hide-m,#ua-pricing .ua-table tbody td.hide-m{display:none}
+}
