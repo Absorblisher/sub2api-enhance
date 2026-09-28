@@ -7,7 +7,7 @@ Sub2API 前端增强脚本（注入到官方 Sub2API 页面）。
 
 ## 部署背景
 
-- 服务器：120.24.39.106，官方 Sub2API v0.2.8（Docker Compose，目录 `/opt/sub2api`）。
+- 服务器：x，官方 Sub2API v0.2.8（Docker Compose，目录 `/opt/sub2api`）。
 - 访问地址：https://yuanyuancyan.site:8444
 - 本仓库只包含**自定义增强代码**，不含官方源码、密钥或 `.env` 等敏感配置。
 
